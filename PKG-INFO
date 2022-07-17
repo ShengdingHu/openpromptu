@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: openpromptu
+Version: 0.1.1
+Summary: The model-agnostic and core version of OpenPrompt, keeping only the hard prompt and verbalizer. Should be used together with OpenDelta
+Home-page: https://github.com/thunlp/OpenPromptU
+Author: 
+Author-email: shengdinghu@gmail.com
+License: Apache
+Keywords: PLM,Parameter-efficient-Learning,AI,NLP
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
