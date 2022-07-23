@@ -169,7 +169,26 @@ class GenerationVerbalizer(Verbalizer):
                 raise ValueError(f'can not parse {d}')
         text = " ".join(text)
         return text
+    def convert_label_words_to_labels(self,texts):
+        '''convert label words to labels'''
+        if hasattr(self,"reversed_label_words_mapping"):
+            pass
+        else:
+            label_words_values = self.label_words.values()
+            assert len(label_words_values) == len(set(label_words_values)), "not a one-to-one mapping"
+            self.reversed_label_words_mapping = {}
+            for k,v in self.label_words:
+                self.reversed_label_words_mapping[v] = k
 
+        new_labels = []
+        for t in texts:
+            new_labels.append(self.reversed_label_words_mapping[t])
+        try:
+            new_labels = np.array(new_labels)
+        except:
+            pass
+
+        return new_labels
 
 
 
